@@ -1,0 +1,36 @@
+.sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 268px;
+    background-color: #00856F;
+}
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 108px;
+}
+.txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 108px;
+    width: 256px;
+    color: white;
+    
+}
+.logoDoc {
+    height: 33px;
+    width: 256px;
+}
+.para {
+    font-weight: 400;
+    size: 14px;
+    line-height: 18px;
+}
+.links {
+    display: flex;
+    gap: 2rem;
+}
