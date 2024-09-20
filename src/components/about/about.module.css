@@ -8,7 +8,8 @@
 .whiteBack {
     background-color: white;
 }
-.cont {
+.cont,
+.container {
     width: 1300px;
     display: flex;
     justify-content: space-around;
@@ -60,7 +61,34 @@
     background-color: #00856F;
 }
 @media (max-width: 1150px) {
+    .sect {
+        height: 969px;
+    }
+    .cont {
+        flex-direction: column-reverse;
+    }
+    .container {
+        flex-direction: column;
+    }
     .txtCont {
-        width: 400px;
+        width: 480px;
+    }
+}
+@media (max-width: 600px) {
+    .sect {
+        height: 969px;
+    }
+    .cont {
+        flex-direction: column-reverse;
+    }
+    .txtCont {
+        width: 282px;
+    }
+    .img {
+        width: 282px;
+    }
+    .h2 {
+        font-size: 30px;
+        line-height: 39px;
     }
 }

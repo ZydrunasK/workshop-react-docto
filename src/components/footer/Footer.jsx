@@ -9,7 +9,7 @@ export function Footer() {
     
     return (
         <>
-            <section className={s.sect}>
+            <footer className={s.sect}>
                 <div className={s.cont}>
                     <div className={s.txt}>
                         <img className={s.logoDoc} src={logo} alt="logo"  />
@@ -23,7 +23,7 @@ export function Footer() {
                     </div>
                 </div>
 
-            </section>
+            </footer>
         </>
     );
 }

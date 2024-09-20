@@ -34,3 +34,18 @@
     display: flex;
     gap: 2rem;
 }
+@media (max-width: 1150px) {
+    .sect {
+        height: 285px;
+    }
+
+}
+@media (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 80%;
+        width: auto;
+    }
+}

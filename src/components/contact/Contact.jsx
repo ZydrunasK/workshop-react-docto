@@ -9,7 +9,7 @@ export function Contact() {
     
     return (
         <section className={`${s.sect} ${s.whiteBack}`}>
-            <div className={s.cont}>
+            <div className={s.container}>
                 <div className={s.txtCont}>
                     <h2 className={s.h1}>Entre em contato com a gente!</h2>
                     <p className={s.para}>
