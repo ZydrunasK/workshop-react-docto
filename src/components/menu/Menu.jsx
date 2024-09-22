@@ -16,19 +16,15 @@ export function Menu() {
     return (
         <section className={s.menu} data-visible={visibleState}>
             <div className={s.header}>
-                <span  className={s.logoWhite}>
-                    <img src={logo} alt="logo"/>
-                </span>
-                <span className={s.close} onClick={changeState}>
-                    <img src={close} alt="close"/>
-                </span>
+                    <img src={logo} className={s.logo} alt="logo"/>
+                    <img src={close} className={s.close} alt="close" onClick={changeState}/>
             </div>
 
             <nav className={s.nav}>
-                <a href="" className={s.link} data-active={true} >Início</a>
-                <a href="" className={s.link} data-active={false} >Sobre</a>
-                <a href="" className={s.link} data-active={false} >Serviços</a>
-                <a href="" className={s.link} data-active={false} >Depoimentos</a>
+                <a href="#" className={s.link} data-active={true} >Início</a>
+                <a href="#" className={s.link} data-active={false} >Sobre</a>
+                <a href="#" className={s.link} data-active={false} >Serviços</a>
+                <a href="#" className={s.link} data-active={false} >Depoimentos</a>
                 <button className={s.btn} type='button'>Agendar sua consulta</button>
             </nav>
 

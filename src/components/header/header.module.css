@@ -1,12 +1,18 @@
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 72px;
     background-color: #DCE9E2;
+    transition: all 1s;
 }
 .header[data-visible=false] {
     display: none;
+}
+.header[data-scroll=true] {
+    background-color: #00856F;
 }
 .nav {
     height: 100%;
@@ -24,6 +30,10 @@
     text-decoration: none;
     border-bottom: 2px solid #00856F;
 }
+.link[data-scroll=true] {
+    color: #F7F9F9;
+    border-color: #F7F9F9;
+}
 .link[data-active=false] {
     opacity: 70%;
     border: none;
@@ -37,6 +47,10 @@
     background-color: transparent;
     padding: 10px 24px;
 }
+.btn[data-scroll=true] {
+    border-color: #F7F9F9;
+    color: #F7F9F9;
+}
 .light:hover {
     background-color: #00856F;
     color: white;
@@ -44,21 +58,35 @@
 .dark:hover {
     background-color: #00453A;
 }
-.logoWhite {
-    display: none;
-}
 .menu {
     display: none;
     cursor: pointer;
+
 }
+.logoWhite,
+.logo[data-scroll=true] {
+    display: none;
+}
+.logoWhite[data-scroll=true] {
+    display: block;
+}
+
 @media (max-width: 700px) {
 .nav,
-.logo,
 .btn {
     display: none;
 }
-.logoWhite,
-.menu {
+.menu,
+.menuIcon {
+display: block;
+}
+.menuIcon[data-scroll=true] {
+    display: none;
+}
+.menuIconWhite {
+    display: none;
+}
+.menuIconWhite[data-scroll=true] {
     display: block;
 }
 }
