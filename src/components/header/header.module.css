@@ -6,7 +6,7 @@
     justify-content: space-around;
     height: 72px;
     background-color: #DCE9E2;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .header[data-visible=false] {
     display: none;
