@@ -20,7 +20,7 @@ export function Contact() {
                         <img src={mail} alt="vector" />
                         contato@doctorcare.com
                     </p>
-                    <button className={s.btn}>
+                    <button className={`${s.btn} ${s.dark}`} type='button'>
                         <img src={whatsapp} alt="vector" />
                         Agende sua consulta
                     </button>
